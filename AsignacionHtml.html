@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Videojuegos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            flex: 0 1 300px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item-content {
+            padding: 1rem;
+        }
+
+        .gallery-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .gallery-item p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex: 0 1 calc(50% - 1rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-item {
+                flex: 0 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galería de Videojuegos</h1>
+        <p>Mis Videojuegos favoritos</p>
+    </header>
+
+    <main class="gallery-container">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="resources/Zelda.jpg" alt="The Legend of Zelda: Breath of the Wild">
+                <div class="gallery-item-content">
+                    <h3>The Legend of Zelda</h3>
+                    <p>Lo empece a jugar en pandemia y la verdad auque al inicio no me llamo tanto la atencion se me hizo un juego demasiado completo el cual le dedique mucho tiempo a su mundo abierto.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resources/batman.jpg">
+                <div class="gallery-item-content">
+                    <h3>Batman: Arkham Asylum</h3>
+                    <p>Este juego lo e jugado varias veces ya y la verdad aunque es parte de una triolgia siento que este es mi favorito por la ambientacion que maneja.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resources/readRedemption.jpg" alt="Read Redemption 2">
+                <div class="gallery-item-content">
+                    <h3>Read Redemption 2</h3>
+                    <p>Este juego lo e querido pasar varias veces pero es que la verdad es demasiado largo por la historia que maneja pero aun asi lo considero de mis juegos favoritos</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resources/metal.jpg" alt="Metal gear solid 3">
+                <div class="gallery-item-content">
+                    <h3>Metal gear solid 3 </h3>
+                    <p>El mejor juego que existe y no hay discusion</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resources/Doom2016.jpg" alt="Doom 2016">
+                <div class="gallery-item-content">
+                    <h3>Doom 2016</h3>
+                    <p>La verdad no esperaba nada de este juego por que me costo como 78 pesos y la verdad ya voy como por la 3 vez que me lo paso.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resources/SonicMania.jpg" alt="Sonic mania">
+                <div class="gallery-item-content">
+                    <h3>Sonic mania</h3>
+                    <p>La verdad es el juego que mas veces me he pasado, literal le conozco todos los finales que existen y lo e comprado para varias consolas es un juegazo</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Galería de Videojuegos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
